@@ -1,4 +1,4 @@
-export interface HeroInfo{
+export interface HeroInfo {
     name: string,
     gender: string,
     birth_year: string,
@@ -7,4 +7,9 @@ export interface HeroInfo{
     hair_color: string,
     skin_color: string,
     eye_color: string
+}
+
+export interface SWContextValue {
+    changePage: (page: string) => void,
+    page: string
 }
