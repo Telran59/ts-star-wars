@@ -1,6 +1,3 @@
-import friend0 from "../assets/main.jpg";
-import {base_url, version} from "./constants.ts";
-
 export interface HeroInfo {
     name: string,
     gender: string,
