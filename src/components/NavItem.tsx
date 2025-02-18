@@ -2,13 +2,14 @@ import {NavLink} from "react-router";
 import {Item} from "../utils/types";
 import {useContext} from "react";
 import {SWContext} from "../utils/context.ts";
+import {defaultHero} from "../utils/constants.ts";
 
 interface Props {
     item: Item
 }
 
 const NavItem = ({item}: Props) => {
-    const {hero} = useContext(SWContext)
+    const {hero = defaultHero} = useContext(SWContext)
 
     return (
         <NavLink

@@ -25,6 +25,6 @@ export interface Characters {
 }
 
 export interface SWContextValue {
-    hero: string,
-    changeHero: (hero: string) => void,
+    hero?: string,
+    changeHero: (hero?: string) => void,
 }
